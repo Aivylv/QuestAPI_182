@@ -8,3 +8,7 @@ import com.example.activity8_questapi.repositori.AplikasiDataSiswa
 import com.example.activity8_questapi.viewmodel.EntryViewModel
 import com.example.activity8_questapi.viewmodel.HomeViewModel
 
+fun CreationExtras.aplikasiDataSiswa(): AplikasiDataSiswa = (
+        this[ViewModelProvider.AndroidViewModelFactory.APPLICATION_KEY] as
+                AplikasiDataSiswa
+        )
